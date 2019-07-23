@@ -38,16 +38,16 @@ h1, h2 {
     text-align: center;
     font-size: 2.6rem;
 }
-
 .store-link:visited {
     color: orange;
 }
-.store-link:hover {
+.store-link:hover, .store-link:focus {
     color: greenyellow;
     text-decoration: underline;
 }
 .store-link:active {
     color: red;
+    text-decoration: underline;
 }
 
 body.front-page {
