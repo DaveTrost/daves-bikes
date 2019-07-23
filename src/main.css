@@ -1,0 +1,18 @@
+/* @import url('https://fonts.googleapis.com/css?family=Heebo|Oswald'); */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Heebo', sans-serif; */
+    background: #eee;
+}
+
+h1 {
+    /* font-family: 'Oswald'; */
+}
+
+.hidden {
+    display: none;
+}
