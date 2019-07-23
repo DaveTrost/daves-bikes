@@ -1,1 +1,1 @@
-import 'generate-bike-tests.js';
+import './generate-bike-tests.js';

@@ -1,6 +1,6 @@
 const bmx20 = {
     code: 'bmx-20',
-    name: '20" BMX Bike',
+    name: '20-inch BMX Bike',
     image: 'assets/bmx-20.jpg',
     description: 'A trick machine ready for back flips at the bike park',
     category: 'bmx',
@@ -10,7 +10,7 @@ const bmx20 = {
 
 const bmxDJ = {
     code: 'bmx-dj',
-    name: '26" Dirt Jumper',
+    name: '26-inch Dirt Jumper',
     image: 'assets/bmx-dj.jpg',
     description: 'Get the biggest airs of your life',
     category: 'bmx',
@@ -20,7 +20,7 @@ const bmxDJ = {
 
 const bmxKids = {
     code: 'bmx-kids',
-    name: '16" Kids BMX Bike',
+    name: '16-inch Kids BMX Bike',
     image: 'assets/bmx-kids.jpg',
     description: 'for the lil\' shredders working on their sick skills',
     category: 'bmx',
@@ -90,5 +90,13 @@ const mountainHardtail = {
 
 
 export const bikes = [
-    bmx20
+    bmx20,
+    bmxDJ,
+    bmxKids,
+    hybridCyclocross,
+    hybridFatTire,
+    hybridGravel,
+    mountainDownhill,
+    mountainDual,
+    mountainHardtail
 ];
