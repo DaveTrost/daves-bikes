@@ -1,16 +1,19 @@
-/* @import url('https://fonts.googleapis.com/css?family=Heebo|Oswald'); */
+@import url('https://fonts.googleapis.com/css?family=Assistant|Heebo|Kanit&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    /* font-family: 'Heebo', sans-serif; */
+    font-family: 'Assistant', sans-serif;
+}
+
+body.front-page {
     background: #eee;
 }
 
-h1 {
-    /* font-family: 'Oswald'; */
+h1, h2 {
+    font-family: 'Kanit', sans-serif;
 }
 
 .hidden {
