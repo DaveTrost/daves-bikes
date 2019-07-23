@@ -40,19 +40,24 @@
     margin: 5px;
 }
 
+#bikes li p {
+    font-size: 0.9rem;
+    width: 60%;
+}
+
 #bikes li button {
     float: right;
-    height: 3em;
+    height: 4em;
     width: 8em;
     max-width: 40%;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
-.price {
-    font-size: 6rem;
+#bikes .price {
+    font-size: 1.3rem;
 }
 
-.price button {
+#bikes .price button {
     transition: color 200ms ease-in-out;
 }
 
