@@ -21,8 +21,8 @@ const bmxDJ = {
 const bmxKids = {
     code: 'bmx-kids',
     name: '16-inch Kids BMX Bike',
-    image: 'assets/bmx-kids.jpg',
-    description: 'for the lil\' shredders working on their sick skills',
+    image: 'assets/bmx-kids.png',
+    description: 'For the lil\' shredders working on their sick skills',
     category: 'bmx',
     price: 300.00,
     cost: 150
@@ -42,7 +42,7 @@ const hybridFatTire = {
     code: 'hybrid-fat-tire',
     name: 'Fat Tire Bike',
     image: 'assets/hybrid-fat-tire.jpg',
-    description: 'The monster truck of bicycles. Bring it on.',
+    description: 'The Monster Truck of bicycles. Bring it on!',
     category: 'hybrid',
     price: 1500.00,
     cost: 700
@@ -52,7 +52,7 @@ const hybridGravel = {
     code: 'hybrid-gravel',
     name: 'Gravel Bike',
     image: 'assets/hybrid-gravel.jpg',
-    description: 'smooth out the roughest roads and carve the turns',
+    description: 'Smooth out the roughest roads and carve the turns',
     category: 'hybrid',
     price: 900.00,
     cost: 400
@@ -72,7 +72,7 @@ const mountainDual = {
     code: 'mountain-dual',
     name: 'Dual Suspension Mountain Bike',
     image: 'assets/mountain-dual.jpg',
-    description: 'Light and stiff carbon fiber frame and the most reactive suspension ever',
+    description: 'Light and stiff carbon fiber with traction in all conditions.',
     category: 'mountain',
     price: 1900.00,
     cost: 1200

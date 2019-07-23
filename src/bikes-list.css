@@ -45,7 +45,11 @@
     width: 60%;
 }
 
-#bikes li button {
+#bikes .price {
+    font-size: 1.3rem;
+}
+
+#bikes button {
     float: right;
     height: 4em;
     width: 8em;
@@ -53,15 +57,11 @@
     border-radius: 7px;
 }
 
-#bikes .price {
-    font-size: 1.3rem;
-}
-
-#bikes .price button {
+#bikes button {
     transition: color 200ms ease-in-out;
 }
 
-h3 button:hover {
+#bikes button:hover {
     background: #aaa;
     color: white;
 }
