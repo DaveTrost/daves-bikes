@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Assistant|Heebo|Kanit&display=swap');
 
+@font-face {
+    font-family: 'Bombing';
+    src: url('../assets/Bombing.ttf') format('truetype');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -14,6 +19,42 @@ body.front-page {
 
 h1, h2 {
     font-family: 'Kanit', sans-serif;
+}
+
+.store-title {
+    font-family: 'Bombing';
+    color: orange;
+    text-align: center;
+    font-size: 10rem;
+}
+
+.store-link:link {
+    font-family: 'Assistant';
+    color: orange;
+    /* background-color: #ccc; */
+    display: inline-block;
+    margin-left: 60%;
+    padding: 10px;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.store-link:visited {
+    color: orange;
+}
+.store-link:hover {
+    color: greenyellow;
+    text-decoration: underline;
+}
+.store-link:active {
+    color: red;
+}
+
+body.front-page {
+    background-image: url("../assets/title-page.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hidden {
