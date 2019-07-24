@@ -48,5 +48,6 @@ QUnit.test('calculate an order total', assert => {
         }
     ];
     assert.equal(getOrderTotal(someBikes, someCart), 4100.00);
+    assert.equal(getOrderTotal(someBikes, someCart, 'save10'), 3690.00);
 });
 
