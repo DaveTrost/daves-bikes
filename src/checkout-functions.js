@@ -8,6 +8,11 @@ export function getLineTotal(quantity, price) {
     return parseFloat((quantity * price).toFixed(2));
 }
 
+export function getDiscount(promos, code) {
+    const promo = promos.find((element) => element.code === code);
+    return (promo ? promo.discount : 0.0);
+}
+
 export function getOrderTotal(bikes, cart, promoCode = '') {
     let accumulator = 0;
     for(let i = 0; i < cart.length; i++) {
@@ -15,9 +20,9 @@ export function getOrderTotal(bikes, cart, promoCode = '') {
         accumulator += getLineTotal(cart[i].quantity, price);
     }
 
-    const promo = promos.find((arrEle) => arrEle.code === promoCode);
-    if(promo) {
-        accumulator *= (1 - promo.discount);
+    const discount = getDiscount(promos, promoCode);
+    if(discount) {
+        accumulator *= (1 - discount);
     }
 
     return (accumulator);
