@@ -5,5 +5,14 @@ export const cart = [
     }, {
         code: 'mountain-hardtail',
         quantity: 2
+    }, {
+        code: 'bmx-dj',
+        quantity: 5
+    }, {
+        code: 'hybrid-fat-tire',
+        quantity: 1
+    }, {
+        code: 'hybrid-gravel',
+        quantity: 2
     }
 ];

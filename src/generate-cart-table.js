@@ -1,5 +1,25 @@
-import { getOrderTotal } from '../src/checkout-functions.js';
+import { getOrderTotal } from './checkout-functions.js';
+import { generateCartItem } from './generate-cart-item.js';
 import { bikes } from './data/bikes.js';
 import { cart } from './data/order.js';
 
-getOrderTotal(bikes, cart);  // currently used here for debugging purposes
+document.getElementById('order-button').addEventListener('click', processOrder);
+
+const tableBody = document.getElementById('cart-table');
+cart.forEach(lineItem => {
+    tableBody.appendChild(generateCartItem(lineItem));
+});
+
+const totalsTable = document.getElementById('totals-table');
+const totalsRowHtml = () => {
+    let html = '<tr class="cart-items-total">';
+    html += '<td colspan="4">Cart Total:</td>';
+    html += '<td>$' + getOrderTotal(bikes, cart) + '</td>';
+    html += '</tr>';
+    return html;
+};
+totalsTable.innerHTML = totalsRowHtml();
+
+function processOrder() {
+    alert('processing');
+}
