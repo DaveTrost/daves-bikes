@@ -1,4 +1,4 @@
-import { findProduct, getLineTotal, getOrderTotal } from '../src/checkout.js';
+import { findProduct, getLineTotal, getOrderTotal } from '../src/checkout-functions.js';
 import { bikes } from '../src/data/bikes.js';
 
 QUnit.module('Checkout Tests');
