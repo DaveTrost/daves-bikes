@@ -48,6 +48,7 @@ In register.js
 - button and field for discount code processing
 - additional row for discount applied
 - styling
+
 - promo codes data objects
 
 - revamp checkout tests with discount built-in
