@@ -15,6 +15,7 @@ totalsTable.innerHTML = buildTotalsHtml();
 const promoCodeButton = document.getElementById('promo-code-button');
 const promoCodeField = document.getElementById('promo-code-field');
 promoCodeButton.addEventListener('click', applyPromo);
+// how to catch a keypress of the enter key is from https://stackoverflow.com/questions/14542062/eventlistener-enter-key
 promoCodeField.addEventListener('keypress', (e) => {
     let key = e.which || e.keyCode;
     if(key === 13) { 

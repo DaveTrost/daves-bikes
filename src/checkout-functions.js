@@ -15,15 +15,13 @@ export function getDiscount(promos, code) {
 
 export function getOrderTotal(bikes, cart, promoCode = '') {
     let accumulator = 0;
-    for(let i = 0; i < cart.length; i++) {
-        const price = findProduct(bikes, cart[i].code).price;
-        accumulator += getLineTotal(cart[i].quantity, price);
-    }
+ 
+    cart.forEach((element) => {
+        const price = findProduct(bikes, element.code).price;
+        accumulator += getLineTotal(element.quantity, price);
+    });
 
-    const discount = getDiscount(promos, promoCode);
-    if(discount) {
-        accumulator *= (1 - discount);
-    }
+    accumulator *= (1 - getDiscount(promos, promoCode));
 
     return (accumulator);
 }
