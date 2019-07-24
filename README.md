@@ -43,4 +43,19 @@ In register.js
 
 ### Generate shopping cart
 
+### Add discount code functionality
+
+- button and field for discount code processing
+- additional row for discount applied
+- styling
+- promo codes data objects
+
+- revamp checkout tests with discount built-in
+- modify checkout functions to pass tests
+
+- modify html builder for cart
+
+- event listener for the button and the field
+- apply/remove hidden from the discount applied row
+
 ### Refactor 2

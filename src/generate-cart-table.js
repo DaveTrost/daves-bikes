@@ -13,7 +13,8 @@ cart.forEach(lineItem => {
 const totalsTable = document.getElementById('totals-table');
 const totalsRowHtml = () => {
     let html = '<tr class="cart-items-total">';
-    html += '<td colspan="4">Cart Total:</td>';
+    html += '<td colspan="2"></td>';
+    html += '<td colspan="2">Cart Total:</td>';
     html += '<td>$' + getOrderTotal(bikes, cart) + '</td>';
     html += '</tr>';
     return html;

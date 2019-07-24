@@ -24,13 +24,17 @@ tbody tr {
     display: inline-block;
 }
 
-tfoot {
-    background: #999;
-    color: white;
+.discount-total {
+    background: lightgray;
+    color: darkslategray;
+    font-weight: bold;
 }
 
 .cart-items-total {
+    background: #999;
+    color: white;
     font-weight: bolder;
+    height: 2em;
 }
 
 .discount-code {
@@ -40,10 +44,12 @@ tfoot {
     margin-bottom: 10px;
 }
 
-.discount-code input {
+.discount-code input, .discount-code button {
     height: 30px;
     width: 18%;
     text-align: center;
+    border-radius: 7px;
+    font-size: 0.9em;
 }
 
 .discount-code label {
@@ -65,12 +71,12 @@ tfoot {
     transition: color 200ms ease-in-out;
 }
 
-.order-now-container button:hover {
+.order-now-container button:hover, .discount-code button:hover {
     background: orange;
     color: white;
 }
 
-.order-now-container button:active {
+.order-now-container button:active, .discount-code button:active {
     background: greenyellow;
     color: black;
 }

@@ -30,39 +30,27 @@
                     <td>Total</td>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><img class="thumbnail" src="assets/bmx-kids.png" alt="image of Kids BMX Bike"></td>
-                    <td>16-inch Kids BMX Bike</td>
-                    <td>1</td>
-                    <td>$300</td>
-                    <td><b>$300</b></td>
-                </tr>
-                <tr>
-                    <td><img class="thumbnail" src="assets/mountain-hardtail.jpg" alt="image of Mt Bike"></td>
-                    <td>Hardtail Mountain Bike</td>
-                    <td>2</td>
-                    <td>$1300</td>
-                    <td><b>$2600</b></td>
-                </tr>
+            <tbody id="cart-table">
             </tbody>
-            <tfoot>
-                <tr class="line-item-total">
-                    <td colspan="4">Cart Total:</td>
-                    <td>$2900</td>
-                </tr>
+            <tr class="discount-total">
+                <td colspan="2"></td>
+                <td colspan="2">Discount Applied:</td>
+                <td>-25%</td>
+            </tr>
+            <tfoot id="totals-table">
             </tfoot>
         </table>
         <p class="discount-code">
             <label>
                 Discount Code: 
                 <input type="text">
+                <button id="apply-code-button">Apply</button>
             </label>
-        </p>
+            </p>
         <p class="order-now-container">
-            <button>Place Order</button>
+            <button id="order-button">Place Order</button>
         </p>
     </main>
-    <!-- <script src="src/generate-bikes-list.js" type="module"></script> -->
+    <script src="src/generate-cart-table.js" type="module"></script>
 </body>
 </html>
