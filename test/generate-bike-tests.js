@@ -10,7 +10,6 @@ QUnit.test('generates a bike', assert => {
         description: 'A trick machine ready for backflips at the bike park',
         category: 'bmx',
         price: 500.00,
-        price: 500.00,
         cost: 200
     };
     const expected = '<li class="bmx-20" title="20-inch BMX Bike"><img src="assets/bmx-20.jpg" alt="image of 20-inch BMX Bike"><h3>20-inch BMX Bike</h3><button value="bmx-20">Add to Cart</button><p>A trick machine ready for backflips at the bike park</p><p class="price">$500</p></li>';
