@@ -1,4 +1,5 @@
 import { bikes } from './bikes.js';
+// import { generateCartItem } from '../generate-cart-item';
 const products = 'daves-bikes-bike-catalog';
 const cart = 'daves-bikes-shopping-cart';
 
@@ -27,6 +28,12 @@ export const store = {
     getShoppingCart() {
         const itemsInCart = this.get(cart);
         return (itemsInCart) ? itemsInCart : [];
+    },
+    getShoppingCartSize() {
+        const itemsInCart = this.get(cart);
+        let accumulator = 0;
+        itemsInCart.forEach(element => accumulator += element.quantity);
+        return accumulator;
     },
     orderProduct(code, quantity = 1) {
         let currentCart = this.getShoppingCart();

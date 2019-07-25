@@ -85,6 +85,8 @@ This is the third part of the lab
 - numeric text element for items in cart
 - styling
 
+- getShoppingCartSize function for store and testing
+
 - On page load, update badge with length
 
 - Move the work of adding products from the render function to the main page
