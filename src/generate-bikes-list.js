@@ -8,8 +8,14 @@ const cartCount = document.getElementById('cart-count');
 
 for(let i = 0; i < bikes.length; i++) {
     const bike = bikes[i];
-    const dom = generateBike(bike);
+    const dom = generateBike(bike, addToCart);
     bikesList.appendChild(dom);
 }
 
-cartCount.textContent = store.getShoppingCartSize();
+const updateCartBadge = () => cartCount.textContent = store.getShoppingCartSize();
+updateCartBadge();
+
+function addToCart(code) {
+    store.orderProduct(code);
+    updateCartBadge();
+}
