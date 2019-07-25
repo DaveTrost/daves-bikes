@@ -71,3 +71,18 @@
     background: greenyellow;
     color: black;
 }
+
+.cart-badge {
+    text-align: right;
+    margin-right: 30px;
+    max-width: 900px;
+}
+
+.cart-badge span {
+    display: inline-box;
+    font-size: 20px;
+}
+
+.cart-badge img {
+    height: 30px;
+}

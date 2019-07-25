@@ -79,4 +79,25 @@ This is the third part of the lab
 - add button updates data in store
 - use store.findProduct
 
-### STRETCH: Cart Badge - LATER
+### STRETCH: Cart Badge
+
+- shopping cart badge image
+- numeric text element for items in cart
+- styling
+
+- On page load, update badge with length
+
+- Move the work of adding products from the render function to the main page
+
+In generate-bikes-list.js:
+
+- add reference to the shopping cart element
+- Build a function here that:
+  - Accepts a code parameter
+  - Calls the store to add the item
+  - Updates the shopping cart badge based on the store's length
+- Pass the function as a parameter to the render function
+
+In generate-bike.js:
+
+- Call the function passed as a parameter in the add button's eventListener
