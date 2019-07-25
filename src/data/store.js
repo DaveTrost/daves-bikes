@@ -36,10 +36,10 @@ export const store = {
             currentCartItem.quantity += quantity;
         } 
         else {
-            currentCart = [{ 
+            currentCart.push({ 
                 code: code, 
                 quantity: quantity
-            }];
+            });
         }
         this.save(cart, currentCart);
     }

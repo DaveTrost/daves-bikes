@@ -1,8 +1,10 @@
 import { getOrderTotal, getDiscount } from './checkout-functions.js';
 import { generateCartItem } from './generate-cart-item.js';
-import { bikes } from './data/bikes.js';
-import { cart } from './data/order.js';
+import { store } from './data/store.js';
 import { promos } from './data/promos.js';
+
+const bikes = store.getProducts();
+const cart = store.getShoppingCart();
 
 const tableBody = document.getElementById('cart-table');
 cart.forEach(lineItem => {

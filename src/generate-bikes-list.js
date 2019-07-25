@@ -1,5 +1,7 @@
-import { bikes } from './data/bikes.js';
+import { store } from './data/store.js';
 import { generateBike } from './generate-bike.js';
+
+const bikes = store.getProducts();
 
 const bikesList = document.getElementById('bikes');
 

@@ -1,3 +1,5 @@
+import { store } from './data/store.js';
+
 export function generateBike(bike) {
     const li = document.createElement('li');
     li.setAttribute('class', bike.code);
@@ -15,6 +17,7 @@ export function generateBike(bike) {
     const button = document.createElement('button');
     button.setAttribute('value', bike.code);
     button.textContent = 'Add to Cart';
+    button.addEventListener('click', () => store.orderProduct(bike.code));
     li.appendChild(button);
 
     const description = document.createElement('p');

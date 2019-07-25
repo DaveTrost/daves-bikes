@@ -70,3 +70,15 @@ test('test we can put multiple items into the cart (non-empty cart case)', asser
     assert.deepEqual(store.getShoppingCart(), expected);
 });
 
+test('test we can put different items into the cart', assert => {
+    const expected = [{ 
+        code: 'bmx-20', 
+        quantity: 3
+    }, {
+        code: 'bmx-kids', 
+        quantity: 1
+    }];
+    store.orderProduct('bmx-20', 3);
+    store.orderProduct('bmx-kids');
+    assert.deepEqual(store.getShoppingCart(), expected);
+});
