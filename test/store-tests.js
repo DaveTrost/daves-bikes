@@ -83,6 +83,10 @@ test('test we can put different items into the cart', assert => {
     assert.deepEqual(store.getShoppingCart(), expected);
 });
 
+test('test getShoppingCartSize function returns 0 for empty cart', assert => {
+    assert.deepEqual(store.getShoppingCartSize(), 0);
+});
+
 test('test getShoppingCartSize function can count items with single and multiple quantities', assert => {
     store.orderProduct('bmx-20', 3);
     store.orderProduct('bmx-kids');

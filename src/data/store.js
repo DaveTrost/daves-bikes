@@ -32,7 +32,9 @@ export const store = {
     getShoppingCartSize() {
         const itemsInCart = this.get(cart);
         let accumulator = 0;
-        itemsInCart.forEach(element => accumulator += element.quantity);
+        if(itemsInCart) {
+            itemsInCart.forEach(element => accumulator += element.quantity);
+        }
         return accumulator;
     },
     orderProduct(code, quantity = 1) {
