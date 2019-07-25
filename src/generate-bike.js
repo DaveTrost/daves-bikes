@@ -1,5 +1,3 @@
-import { store } from './data/store.js';
-
 export function generateBike(bike, callback) {
     const li = document.createElement('li');
     li.setAttribute('class', bike.code);
