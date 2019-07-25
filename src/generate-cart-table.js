@@ -11,9 +11,6 @@ cart.forEach(lineItem => {
     tableBody.appendChild(generateCartItem(lineItem));
 });
 
-const totalsTable = document.getElementById('totals-table');
-totalsTable.innerHTML = buildTotalsHtml();
-
 const promoCodeButton = document.getElementById('promo-code-button');
 const promoCodeField = document.getElementById('promo-code-field');
 promoCodeButton.addEventListener('click', applyPromo);
@@ -24,6 +21,9 @@ promoCodeField.addEventListener('keypress', (e) => {
         applyPromo();
     }    
 });    
+
+const totalsTable = document.getElementById('totals-table');
+totalsTable.innerHTML = buildTotalsHtml();
 
 const orderButton = document.getElementById('order-button');
 orderButton.addEventListener('click', processOrder);
