@@ -1,5 +1,6 @@
-import { findProduct, getLineTotal, getOrderTotal } from '../src/checkout-functions.js';
+import { getLineTotal, getOrderTotal } from '../src/checkout-functions.js';
 import { bikes } from '../src/data/bikes.js';
+import { store } from '../src/data/store.js';
 
 QUnit.module('Checkout Tests');
 
@@ -15,7 +16,7 @@ QUnit.test('find a bike by code', assert => {
         cost: 200
     };
     
-    assert.deepEqual(findProduct(bikes, code), expected);
+    assert.deepEqual(store.findElement(bikes, code), expected);
 });
 
 QUnit.test('calculate a line total', assert => {

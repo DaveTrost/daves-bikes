@@ -60,3 +60,23 @@ In register.js
 - apply/remove hidden from the discount applied row
 
 ### Refactor 2
+
+## Store setup in Local Storage
+
+This is the third part of the lab
+
+### Flexible Storage implemented in the store object
+
+- QUnit testStart
+- Get and Save
+- Bootstrapping in getProducts
+- Get Cart
+- Add Product to Cart (empty/not & add multiple)
+
+### Use store in webpage
+
+- load products & cart from store on page refresh
+- add button updates data in store
+- use store.findProduct
+
+### STRETCH: Cart Badge - LATER

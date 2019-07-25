@@ -1,8 +1,5 @@
 import { promos } from './data/promos.js';
-
-export function findProduct(bikes, code) {
-    return bikes.find((element) => element.code === code);
-}
+import { store } from './data/store.js';
 
 export function getLineTotal(quantity, price) {
     return parseFloat((quantity * price).toFixed(2));
@@ -17,7 +14,7 @@ export function getOrderTotal(bikes, cart, promoCode = '') {
     let accumulator = 0;
  
     cart.forEach((element) => {
-        const price = findProduct(bikes, element.code).price;
+        const price = store.findElement(bikes, element.code).price;
         accumulator += getLineTotal(element.quantity, price);
     });
 
