@@ -10,10 +10,18 @@
 </head>
 <body>
     <header>
-        <h1>Dave's Bike Shop</h1>
+        <nav>
+            <h1>Dave's Bike Shop</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bikes-list.html">Bikes</a></li>
+                <li><a href="shopping-cart.html">Cart</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <h2>Bikes for Sale</h2>
+        <p class="cart-badge"><img src="assets/shopping-cart.png" alt=""> <span id="cart-count"></span></p>
         <ul id="bikes"></ul>
     </main>
     <script src="src/generate-bikes-list.js" type="module"></script>

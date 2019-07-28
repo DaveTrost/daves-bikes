@@ -2,7 +2,7 @@ const bmx20 = {
     code: 'bmx-20',
     name: '20-inch BMX Bike',
     image: 'assets/bmx-20.jpg',
-    description: 'A trick machine ready for back flips at the bike park',
+    description: 'A trick machine ready for backflips at the bike park',
     category: 'bmx',
     price: 500.00,
     cost: 200

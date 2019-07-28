@@ -1,4 +1,4 @@
-export function generateBike(bike) {
+export function generateBike(bike, callback) {
     const li = document.createElement('li');
     li.setAttribute('class', bike.code);
     li.setAttribute('title', bike.name);
@@ -15,6 +15,7 @@ export function generateBike(bike) {
     const button = document.createElement('button');
     button.setAttribute('value', bike.code);
     button.textContent = 'Add to Cart';
+    button.addEventListener('click', () => callback(bike.code));
     li.appendChild(button);
 
     const description = document.createElement('p');

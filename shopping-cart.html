@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dave's Bikes</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/shopping-cart.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Dave's Bike Shop</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bikes-list.html">Bikes</a></li>
+                <li><a href="shopping-cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Cart</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <td colspan="2">Item</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody id="cart-table">
+            </tbody>
+            <tfoot id="totals-table">
+            </tfoot>
+        </table>
+        <p class="discount-code">
+            <label>
+                Promo Code: <input id="promo-code-field" type="text">
+                <button id="promo-code-button">Apply</button>
+            </label>
+            </p>
+        <p class="order-now-container">
+            <button id="order-button">Place Order</button>
+        </p>
+    </main>
+    <script src="src/generate-cart-table.js" type="module"></script>
+</body>
+</html>

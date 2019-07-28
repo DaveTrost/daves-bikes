@@ -1,0 +1,83 @@
+table, .order-now-container, .discount-code {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 700px;
+}
+
+.cart-table {
+    box-shadow: 2px 3px 5px 5px #444;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #444;
+    color: white;
+}
+
+tbody tr {
+    border: 1px solid black;
+}
+
+.thumbnail {
+    height: 80px;
+    display: inline-block;
+}
+
+.discount-total {
+    background: lightgray;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.cart-items-total {
+    background: #999;
+    color: white;
+    font-weight: bolder;
+    height: 2em;
+}
+
+.discount-code {
+    text-align: right;
+    height: 50px;
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+
+.discount-code input, .discount-code button {
+    height: 30px;
+    width: 18%;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 0.9em;
+}
+
+.discount-code label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.order-now-container {
+    text-align: right;
+}
+
+.order-now-container button {
+    font-weight: bolder;
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    border-radius: 7px;
+    font-size: 1.25em;
+    transition: color 200ms ease-in-out;
+}
+
+.order-now-container button:hover, .discount-code button:hover {
+    background: orange;
+    color: white;
+}
+
+.order-now-container button:active, .discount-code button:active {
+    background: greenyellow;
+    color: black;
+}
+
