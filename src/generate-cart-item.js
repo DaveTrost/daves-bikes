@@ -1,6 +1,7 @@
 import { getLineTotal } from './checkout-functions.js';
-import { bikes } from './data/bikes.js';
 import { store } from './data/store.js';
+
+const bikes = store.getProducts();
 
 export function generateCartItem(lineItem) {
     const bikeObject = store.findElement(bikes, lineItem.code);
