@@ -17,6 +17,23 @@ export const store = {
         }
         return this.get(products);
     },
+    addProduct(product) {
+        if(!product) return;
+        let storedBikes = this.get(products);
+
+        if(storedBikes && this.getProduct(product.code)) {
+            alert('That code is not unique.');
+            return;
+        }
+
+        if(!storedBikes) {
+            storedBikes = [product];
+        } 
+        else {
+            storedBikes.push(product);
+        }
+        this.save(products, storedBikes);
+    },
     findElement(elements, code) {
         return elements.find((element) => element.code === code);
     },

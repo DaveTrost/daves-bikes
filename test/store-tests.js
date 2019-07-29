@@ -32,6 +32,43 @@ test('test get product', assert => {
     assert.deepEqual(store.getProduct(code), bikes[0]);
 });
 
+test('test adding a product to an Empty store', assert => {
+    const expected = {
+        code: 'bmx-14',
+        name: '14-inch Kids BMX Bike',
+        image: 'assets/bmx-14.jpg',
+        description: 'Logan\'s favorite bike',
+        category: 'bmx',
+        price: 300.00
+    };
+    store.addProduct(expected);
+    assert.deepEqual(store.getProduct(expected.code), expected);
+});
+
+test('test adding a product to a Non-Empty store', assert => {
+    const expected = {
+        code: 'bmx-14',
+        name: '14-inch Kids BMX Bike',
+        image: 'assets/bmx-14.jpg',
+        description: 'Logan\'s favorite bike',
+        category: 'bmx',
+        price: 300.00
+    };
+    store.getProducts();
+    store.addProduct(expected);
+    assert.deepEqual(store.getProduct(expected.code), expected);
+});
+
+test('test adding a duplicate product', assert => {
+    const duplicateBike = {
+        code: 'bmx-20',
+        name: '20-inch BMX Bike'
+    };
+    const expected = store.getProducts();
+    store.addProduct(duplicateBike);
+    assert.deepEqual(store.getProducts(), expected);
+});    
+
 test('test we can put something into the cart (empty cart case)', assert => {
     const expected = [{ 
         code: 'bmx-20', 
