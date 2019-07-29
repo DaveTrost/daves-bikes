@@ -9,6 +9,11 @@ productForm.addEventListener('submit', (event) => {
     const code = formData.get('code');
     const image = formData.get('image');
     
+    if(store.getProduct(code)) {
+        alert('Product code is not unique. Please try again.');
+        return;
+    }
+
     getBase64(image, (base64Url) => {
         store.addProduct({
             code: code,
@@ -17,14 +22,12 @@ productForm.addEventListener('submit', (event) => {
             description: formData.get('description'),
             category: formData.get('category'),
             price: +formData.get('price')
-        });    
+        });
+        if(store.getProduct(code)) {
+            alert('Product Successfully Added');
+            productForm.reset();
+        }
     });
-
-    if(store.getProduct(code)) {
-        alert('Product Successfully Added');
-        productForm.reset();
-    }
-
 });
 
 // A method to convert a file object to base64 JSON compatible text from Stack Overflow:

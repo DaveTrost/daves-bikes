@@ -22,7 +22,6 @@ export const store = {
         let storedBikes = this.get(products);
 
         if(storedBikes && this.getProduct(product.code)) {
-            alert('That code is not unique.');
             return;
         }
 
