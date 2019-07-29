@@ -103,3 +103,39 @@ In generate-bikes-list.js:
 In generate-bike.js:
 
 - Call the function passed as a parameter in the add button's eventListener
+
+## Product Entry through form submission
+
+This is the fourth part of the lab
+
+### Product Entry Page
+
+- Create a form with fields for all necessary product data
+- give the form an id
+
+### TDD API Method for Add Product
+
+- Create a store method called .addProduct.
+  - It takes a product object as a parameter and adds that product to the product list
+  - make sure to prevent duplicate id's
+- Build some tests for the new method
+  - add a product to the store and then use deepEqual to test the returned product with the input product
+  - add a duplicate product and ensure that the products list is unchanged
+
+### Form Submission
+
+create new functionality in product-entry.js
+
+- Get a reference to the form
+- Subscribe to the submit event
+  - Don't forget to call event.preventDefault()!
+- Create a new FormData object passing in the form
+- Make a new product object from the formData
+- Call your new store .addProduct method with the object.
+- Reset the form
+
+### STRETCH: Remove a product
+
+- On the product entry page, also render a list of products with a remove button by each one.
+- Add a store method .removeProduct that takes a product code. In that method, find the product and remove from the product array.
+- In the event handler for the remove button call the remove product method on the store, and call .remove() on the top-level list item element.
