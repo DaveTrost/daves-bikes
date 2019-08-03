@@ -1,0 +1,49 @@
+form {
+    display: grid;
+    box-shadow: 0px 1px 2px darkslategray;
+    max-width: 930px;
+    min-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+form p {
+    display: inline-block;
+    border: none;
+    text-align: left;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+input, select {
+    border: 1px solid black;
+    height: 2em;
+    text-align: center;
+}
+
+form button {
+    font-size: 1em;
+    font-weight: bold;
+    height: 3em;
+    width: 8em;
+    border-radius: 7px;
+}
+
+form button {
+    transition: color 200ms ease-in-out;
+}
+
+form button:hover {
+    background: orange;
+    color: white;
+}
+
+form button:active {
+    background: greenyellow;
+    color: black;
+}
+
